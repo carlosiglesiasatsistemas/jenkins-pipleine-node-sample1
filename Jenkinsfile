@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:18.16.0-alpine' } }
+    agent { docker { image 'node:lts-bullseye-slim' } }
     stages {
         stage('build') {
             steps {
